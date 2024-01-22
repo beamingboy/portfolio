@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinay Kumar - Software Developer, web developer">
+    <title>Vinay Kumar - Software Developer</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/about.css">
+    <link rel="stylesheet" href="./style/testimonial.css">
+    <link rel="stylesheet" href="./style/projects.css">
+    <link rel="stylesheet" href="./style/cards.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./style/utility.css">
+
+    <link rel="stylesheet" href="./style/team.css">
+
+    <!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous">
+        </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ggvsdlNTF3W1lB3Uc");
+        })();
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header id="header-navigation" class="flex">
+        <nav class="flex">
+            <ul class="side-bar">
+                <li aria-label="Close Menu" onclick=hideSidebar()>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                fill="black" />
+                        </svg></a>
+                </li>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#services">Projects</a></li>
+                <li> <a href="#about-us">Experience</a></li>
+                <!-- <li> <a href="#our-projects">Our Projects</a></li> -->
+                <!-- <li> <a href="#meet-our-team">Meet Our Team</a></li> -->
+                <li> <a class="nav-button" href="#contact-form">Contact</a></li>
+            </ul>
+
+            <ul class="flex">
+                <li><a class="logo-heading" href="">VINAY</a>
+                </li>
+                <li class="hideOnMobile"> <a href="#">Home</a></li>
+                <li class="hideOnMobile"> <a href="#about-us">Projects</a></li>
+                <li class="hideOnMobile"> <a href="#about-us">Experience</a></li>
+                <!-- <li class="hideOnMobile"> <a href="#our-projects">Our Projects</a></li> -->
+                <!-- <li class="hideOnMobile"> <a href="#meet-our-team">Meet Our Team</a></li> -->
+                <li class="hideOnMobile"> <a class="nav-button bold" href="#contact-form">Contact</a></li>
+                <li aria-label="Open Menu" class="menu-button" onclick=showSidebar()>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main id="main-banner" class="main-banner">
+        <div class="wrapper">
+            <section class="hero-section">
+                <div class="text-content">
+                    <h1>Welcome to my digital realm!</h1>
+                    <p class="hero-text">I'm Vinay Kumar, a passionate Software Developer crafting innovative solutions
+                        and pushing the boundaries of technology.</p>
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="our-mission section1">
+        <div class="wrapper">
+            <div class="m-text-conatiner">
+                <h2 class="h-section" style="text-align: center;">Innovate. Empower. Transform.</h2>
+                <p class="t-level3" style="padding-top: 30px; text-align: center;">As a passionate Software Engineering
+                    student, my mission is to <span>Innovate</span> through cutting-edge technologies, <span>Empower</span> individuals by
+                    creating user-centric solutions, and <span>Transform</span> the digital landscape by contributing to projects
+                    that drive positive change. I am dedicated to continuous learning, pushing the boundaries of
+                    software development, and applying my skills to make a meaningful impact on the world.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Services Sections -->
+    <section class="services-section section1" id="services">
+        <div class="wrapper">
+            <div class="services-container">
+                <div class="service-wrapper services-header">
+                    <h2 class="h-section">OUR SERVICES</h2>
+                    <p class="t-level1">Discover a world of unparalleled expertise as we offer comprehensive services in
+                        steelfixing, earthworks, and concrete construction.</p>
+                </div>
+
+                <!-- service cards -->
+                <div class="service-wrapper services-cards">
+
+                    <div class="service-container">
+                        <div class=" service-card1">
+                            <div class="s-card-content">
+                                <div class="card-design">
+                                </div>
+                                <div class="s-card-text">
+                                    <h3 class="h-section2">Earthworks</h3>
+                                    <p class="t-level0">Reshape possibilities with our expert earthworks, sculpting
+                                        landscapes to perfection and laying the groundwork for your construction
+                                        ambitions.</p>
+                                    <a class="s-card-link" href="./Assist-Personal-Activities.html">
+                                        More &nbsp;
+                                        <svg class="s-arrow-svg" fill="#272727" height="15px" width="15px" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                                            xml:space="preserve">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round">
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./images/services-section/service1.jfif" alt="Earthworks">
+                        </div>
+                        <div class="service-gallery">
+                            <div class="s-img-container">
+                                <img src="images/earthworks/e1.jfif" alt="landscaping">
+                                <img src="images/earthworks/e1.jfif" alt="landscaping">
+                                <img src="images/earthworks/e1.jfif" alt="landscaping">
+                                <img src="images/earthworks/e1.jfif" alt="landscaping">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-container">
+                        <div class=" service-card1 service-reverse r-background">
+                            <div class="service-reverse s-card-content">
+                                <div class="card-design2 card-design">
+
+                                </div>
+                                <div class="s-card-text">
+                                    <h3 class="h-section2">Steelfixing</h3>
+                                    <p class="t-level0">Elevate structural strength with our precise steelfixing
+                                        services, where expertise meets durability to reinforce the foundation of your
+                                        projects.</p>
+                                    <a class="s-card-link" href="./Assist-Travel-Transport.html">
+                                        More &nbsp;
+                                        <svg class="s-arrow-svg" fill="#272727" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                                            xml:space="preserve">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round">
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./images/services-section/service2.jfif" alt="Steelfixing">
+                        </div>
+                        <div class="service-gallery">
+                            <div class="s-img-container">
+                                <img src="images/steelfixing/s1.jfif" alt="Steelfixing">
+                                <img src="images/steelfixing/s1.jfif" alt="Steelfixing">
+                                <img src="images/steelfixing/s1.jfif" alt="Steelfixing">
+                                <img src="images/steelfixing/s1.jfif" alt="Steelfixing">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-wrapper services-cards">
+                    <div class="service-container">
+                        <div class=" service-card1">
+                            <div class="s-card-content">
+                                <div class="card-design">
+
+                                </div>
+                                <div class="s-card-text">
+                                    <h3 class="h-section2">Concrete Construction</h3>
+                                    <p class="t-level0">Crafting solidity in every pour, our concrete construction
+                                        services stand as a testament to unwavering quality, building the foundations
+                                        for lasting structures</p>
+                                    <a class="s-card-link" href="./Assist-Personal-Activities.html">
+                                        More &nbsp;
+                                        <svg class="s-arrow-svg" fill="#272727" height="15px" width="15px" version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330"
+                                            xml:space="preserve">
+                                            <g stroke-width="0"></g>
+                                            <g stroke-linecap="round" stroke-linejoin="round">
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255 s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0 c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="./images/services-section/service3.jfif" alt="Concrete Slab">
+                        </div>
+                        <div class="service-gallery">
+                            <div class="s-img-container">
+                                <img src="images/concrete/c1.jfif" alt="Concrete Slab">
+                                <img src="images/concrete/c1.jfif" alt="Concrete Slab">
+                                <img src="images/concrete/c1.jfif" alt="Concrete Slab">
+                                <img src="images/concrete/c1.jfif" alt="Concrete Slab">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about-us" class="bg-about-text">
+        <div class="wrapper">
+            <div class="about-content ">
+                <h2 class="h-section">OUR STOTY</h2>
+                <div class="ab-content-text">
+                    <div class="ab-text">
+                        <!-- <img src="/images/team/first.svg" alt=""> -->
+                        <p>In the spirit of trustworthiness, our cohesive team of 30+ professionals operates with
+                            integrity, reliability, and a shared dedication to excellence.</p>
+                    </div>
+                    <div class="ab-text">
+                        <!-- <img src="/images/team/second.svg" alt=""> -->
+                        <p>At ASR Civil, time reliability is not just a commitment but a promise—we meticulously plan
+                            and execute, keeping projects on track with precision.</p>
+                    </div>
+                    <div class="ab-text">
+                        <!-- <img src="/images/team/third.svg" alt=""> -->
+                        <p>Communication is the heartbeat of our process; we prioritize clear and effective
+                            communication to ensure seamless collaboration with clients, partners, and within our team.
+                        </p>
+                    </div>
+                    <div class="ab-text">
+                        <!-- <img src="/images/team/third.svg" alt=""> -->
+                        <p>Surpassing numerical milestones, our annual achievement of 500+ slabs is a testament to our
+                            unwavering dedication to excellence in construction.</p>
+                    </div>
+                    <div class="ab-text">
+                        <!-- <img src="/images/team/four.svg" alt=""> -->
+                        <p>Our construction journey spans 15+ years, marked by invaluable experiences that shape our
+                            approach, making us leaders in delivering projects with unmatched proficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="wrapper" style="padding-top:100px;">
+        <div class='sk-ww-google-reviews' data-embed-id='213381'></div>
+    </div> -->
+
+    <section id="our-projects" class="our-projects">
+        <div class="wrapper">
+            <div class="p-content">
+                <h2 class="heading-h2" style="color: black;">OUR PROJECTS</h2>
+                <p style="padding-top: 20px;">
+                    Our projects range from residential to commercial, each telling a unique story of challenge,
+                    innovation, and success. Projects often present unique challenges, from intricate site
+                    conditions to tight timelines. We thrive on turning challenges into opportunities, employing our
+                    seasoned experience and innovative strategies to overcome every hurdle with precision.
+                </p>
+                <p>
+                    Every project is approached with a fresh perspective, tailored to its distinct requirements. From
+                    customized solutions to innovative design approaches, our commitment to delivering uniqueness is
+                    unwavering.
+                </p>
+                <p>
+                    Explore our project gallery to witness the breadth of our expertise, from intricate earthmoving to
+                    precise steel fixing and beyond.
+                </p>
+                <div class="p-projects">
+                    <div class="p-image">
+                        <p class="pp">More than 20 slabs</p>
+                    </div>
+                    <!-- <div class="p-image">
+                        <p class="pp">Child&nbsp;care</p>
+                    </div>
+                    <div class="p-image">
+                        <p class="pp">Child care</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="meet-our-team" class="meet-our-team bg-team-text">
+        <div class="wrapper">
+            <div class="team">
+                <div class="about-content ">
+                    <h2 class="heading-h2">OUR TEAM</h2>
+                    <div class="ab-content-text">
+                        <div class="ab-text">
+                            <!-- <img src="/images/team/first.svg" alt=""> -->
+                            <p>Our team thrives on precision—meticulously planning and executing each project with
+                                meticulous attention to detail. From the drawing board to the construction site,
+                                precision is ingrained in every step of our process.</p>
+                        </div>
+                        <div class="ab-text">
+                            <!-- <img src="/images/team/second.svg" alt=""> -->
+                            <p>Collaboration is the heartbeat of our success. With clear lines of communication and a
+                                culture that fosters teamwork, our professionals seamlessly collaborate with clients,
+                                partners, and each other to bring visions to life.</p>
+                        </div>
+                        <div class="ab-text">
+                            <!-- <img src="/images/team/third.svg" alt=""> -->
+                            <p>Diverse in skills and united in purpose, our team boasts expertise across various
+                                disciplines, from earthmoving to steel fixing and concrete construction.
+                            </p>
+                        </div>
+                        <div class="ab-text">
+                            <!-- <img src="/images/team/third.svg" alt=""> -->
+                            <p>Passion drives us, commitment defines us. Every team member is fueled by a passion for
+                                construction excellence, and our shared commitment ensures that every project exceeds
+                                expectations.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="wrapper">
+            <div class="p-gallery">
+                <div class="p-img-container">
+                    <img src="images/gallery/image1.png" alt="ASR Civil Pty Ltd. Construction">
+                    <img src="images/gallery/image2.png" alt="ASR Civil Pty Ltd. Steelfixing">
+                    <img src="images/gallery/image3.png" alt="ASR Civil Pty Ltd. Steelfixing">
+                    <img src="images/gallery/image4.png" alt="ASR Civil Pty Ltd. Steelfixing">
+                    <img src="images/gallery/image5.png" alt="ASR Civil Pty Ltd. Steelfixing">
+                    <img src="images/gallery/image6.png" alt="ASR Civil Pty Ltd. Footing">
+                    <img src="images/gallery/image7.png" alt="ASR Civil Pty Ltd. Concrete">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="footer-contact">
+
+        <section id="contact-us">
+            <div class="wrapper">
+                <div class="c-container">
+                    <div class="c-map">
+                        <a href="tel:+61-435-301-105" class="c-tab link-text" rel="noopener noreferrer" target="_blank">
+                            <svg class="svg-size" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <g>
+                                    <g>
+                                        <path fill="#394240"
+                                            d="M60,28h-8c-2.211,0-4,1.789-4,4s1.789,4,4,4h8c2.211,0,4-1.789,4-4S62.211,28,60,28z" />
+                                        <path fill="#394240"
+                                            d="M49.711,19.465l6.93-4c1.914-1.105,2.57-3.551,1.461-5.465C57,8.086,54.555,7.43,52.641,8.535l-6.93,4
+                                        c-1.914,1.105-2.57,3.551-1.461,5.465C45.352,19.914,47.797,20.57,49.711,19.465z" />
+                                        <path fill="#394240" d="M56.641,48.535l-6.93-4C47.797,43.43,45.355,44.086,44.25,46s-0.453,4.359,1.461,5.465l6.93,4
+                                        C54.555,56.57,57,55.914,58.105,54S58.555,49.641,56.641,48.535z" />
+                                        <path fill="#394240"
+                                            d="M28,0H12c-0.52,0-1.039,0.105-1.527,0.309C9.98,0.512,9.535,0.805,9.164,1.18C8.766,1.578,0,12,0,32
+                                        s8.316,29.688,8.672,30.219c0.113,0.172,0.262,0.309,0.395,0.457c0.062,0.066,0.109,0.137,0.176,0.199
+                                        c0.328,0.316,0.699,0.562,1.102,0.742c0.086,0.047,0.176,0.07,0.266,0.102C11.055,63.883,11.52,64,11.992,64
+                                        C11.996,64,12,64,12,64h16c2.211,0,4-1.789,4-4V44c0-2.211-1.789-4-4-4h-4V24h4c2.211,0,4-1.789,4-4V4C32,1.789,30.211,0,28,0z
+                                        M24,16h-4c-2.211,0-4,1.789-4,4v24c0,2.211,1.789,4,4,4h4v8h-9.715C12.262,52.316,8,48,8,32s3.996-21.5,5.879-24H24V16z" />
+                                    </g>
+                                    <path class="svg-color" fill="#F76D57" d="M24,16h-4c-2.211,0-4,1.789-4,4v24c0,2.211,1.789,4,4,4h4v8h-9.715C12.262,52.316,8,48,8,32
+                                    s3.996-21.5,5.879-24H24V16z" />
+                                </g>
+                            </svg>
+
+                            <p class="h-p">Call Us</p>
+                            <p class="s-p">0435 301 105</p>
+                            <p class="s-p">0470 266 828</p>
+                        </a>
+                        <a rel="noopener noreferrer" target="_blank"
+                            href="https://www.google.com/maps/dir//19+Stanlake+Ave,+Saint+Marys+SA+5042/@-35.0079357,138.5004151,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6ab0d1eb47cfc10b:0x5d0296b29cdf5c1a!2m2!1d138.5827453!2d-35.0079671?entry=ttu"
+                            class="c-tab link-text">
+                            <svg class="svg-size" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="100px"
+                                viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+                                <g>
+                                    <path class="svg-color" fill="#F76D57" d="M32,52.789l-12-18C18.5,32,16,28.031,16,24c0-8.836,7.164-16,16-16s16,7.164,16,16
+                                        c0,4.031-2.055,8-4,10.789L32,52.789z" />
+                                    <g>
+                                        <path fill="#394240" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289
+                                            l16,24C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289
+                                            C54.289,34.008,56,29.219,56,24C56,10.746,45.254,0,32,0z M44,34.789l-12,18l-12-18C18.5,32,16,28.031,16,24
+                                            c0-8.836,7.164-16,16-16s16,7.164,16,16C48,28.031,45.945,32,44,34.789z" />
+                                        <circle fill="#394240" cx="32" cy="24" r="8" />
+                                    </g>
+                                </g>
+                            </svg>
+
+                            <p class="h-p">Find Us</p>
+                            <p class="s-p">Saint Marys, SA 5042</p>
+                        </a>
+                        <a rel="noopener noreferrer" target="_blank" href="" class="c-tab link-text">
+                            <svg class="svg-size" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64"
+                                enable-background="new 0 0 64 64" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path fill="#394240"
+                                            d="M60,8H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V12C64,9.789,62.211,8,60,8z M56,16v0.266L32,34.934L8,16.266V16H56z M8,48V26.398l21.543,16.758C30.266,43.719,31.133,44,32,44s1.734-0.281,2.457-0.844 L56,26.398V48H8z">
+                                        </path>
+                                        <g>
+                                            <polygon class="svg-color" fill="#F76D57"
+                                                points="8,16 8,16.266 32,34.934 56,16.266 56,16 "></polygon>
+                                            <path class="svg-color" fill="#F76D57"
+                                                d="M32,44c-0.867,0-1.734-0.281-2.457-0.844L8,26.398V48h48V26.398L34.457,43.156 C33.734,43.719,32.867,44,32,44z">
+                                            </path>
+                                        </g>
+                                        <path opacity="0.15" fill="#231F20"
+                                            d="M8,48V26.398l21.543,16.758C30.266,43.719,31.133,44,32,44s1.734-0.281,2.457-0.844 L56,26.398V48H8z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <p class="h-p">Contact Us</p>
+                            <p class="s-p">parminder@asrcivil.com</p>
+                        </a>
+
+                    </div>
+                    <div class="c-contact">
+                        <h2>Contact Us</h2>
+                        <form id="contact-form">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+                            <span class="error" id="name-error"></span>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                            <span class="error" id="email-error"></span>
+
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" required>
+                            <span class="error" id="subject-error"></span>
+
+                            <label for="message">How can we help you ?</label>
+                            <textarea id="message" rows="4" required></textarea>
+                            <span class="error" id="message-error"></span>
+
+                            <button onclick="SendMail()" class=" btn_contact">
+                                Get A Quote
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Container -->
+        <div id="footer-container">
+            <footer class="flex">
+                <div class="wrapper flex">
+                    <div class="footer-top">
+                        <ul style="border-top: none;">
+                            <li class="flex-centre"><img src="images/logo/logo.svg" alt="ASR Civil"></li>
+                            <li class="flex-centre"><a href="#" class="company-name">ASR Civil</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="link-text" href="#">Home</a></li>
+                            <li><a class="link-text" href="#about-us">About ASR</a></li>
+                            <li><a class="link-text" href="#our-projects">Our Projects</a></li>
+                            <li><a class="link-text" href="#meet-our-team">Meet Our Team</a></li>
+                        </ul>
+                        <ul>
+                            <li><a class="link-text" href="#contact-form">Get A Free Quote</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Location:&nbsp;</span>
+                                <a rel="noopener noreferrer" target="_blank"
+                                    href="https://www.google.com/maps/dir//19+Stanlake+Ave,+Saint+Marys+SA+5042/@-35.0079357,138.5004151,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x6ab0d1eb47cfc10b:0x5d0296b29cdf5c1a!2m2!1d138.5827453!2d-35.0079671?entry=ttu">
+                                    Saint Marys, SA 5042
+                                </a>
+                            </li>
+
+                            <li>
+                                <span>Email:&nbsp;</span>
+                                <a rel="noopener noreferrer" target="_blank" href="">parminder@asrcivil.com</a>
+                            </li>
+
+                            <li>
+                                <span>Mobile:&nbsp;</span>
+                                <a rel="noopener noreferrer" target="_blank" href="tel:+61-435-301-105">0435 301 105</a>
+                                &nbsp;&nbsp;
+                                <a rel="noopener noreferrer" target="_blank" href="tel:+61-470-266-828">0470 266 828</a>
+
+                            </li>
+                            <li>
+                                <span>ABN: &nbsp;</span>
+                                <a href="https://abr.business.gov.au/ABN/View?id=58646352945">58 646 352 945</a>
+                            </li>
+                            <li style="width: 15%; padding-top: 20px;" class="space-between">
+                                <a class="link-text" rel="noopener noreferrer" target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100083497774706&locale=hi_IN&paipv=0&eav=AfbZf_Jxd5qbG35zQQ4Hgd8JjwcV75pW4gPhEg5GSpQwLeCfoq2421qkHN8L98V9H9c">
+                                    <svg enable-background="new 0 0 56.693 56.693" height="20px" version="1.1"
+                                        viewBox="0 0 56.693 56.693" width="20px" xml:space="preserve"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <path fill="#fff"
+                                            d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z" />
+                                    </svg>
+                                </a>
+                                <a class="link-text" rel="noopener noreferrer" target="_blank" href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_2" width="20px" height="20px" viewBox="0 0 24 24"
+                                        style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                                        <path fill="#fff"
+                                            d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper flex">
+                    <div class="footer-bottom flex">
+                        <ul class="flex">
+                            <li>© ASR Civil Pty Ltd 2023</li>
+                            <li><a class="link-text" rel="noopener noreferrer" target="_blank" href="">Website Author:
+                                    Vinay Kumar</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="javascript/main.js">
+
+    </script>
+
+</body>
+
+</html>

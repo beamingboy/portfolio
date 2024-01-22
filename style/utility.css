@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    /* height: 100vh; */
+    overflow: none;
+    background-color:#ffffff;
+    /* background-color: #f4f6f7; */
+}
+
+:root{
+    --nav-bg: #394236;
+    --logo-color:#FF0000;
+    --button-color:#FF0000;
+    --button-hover:#500000;
+    --heading2: #dddddd;
+}
+
+
+.h-section{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--heading2);
+}
+
+.h-section2{
+    color: #000;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.h-section3{
+    color: #000;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+    
+
+.t-level0{
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.t-level1{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.t-level2{
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.t-level3{
+    color: #ffffff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.wrapper{
+    padding: 0 30px;
+    margin-right: auto;
+    margin-left:  auto;
+    width: 1600px;
+    height: 100%;
+}
+
+.section1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    transition: 0.3s ease-in;
+}
+
+.link-text{
+    text-decoration: none;
+}
+
+@media(max-width: 1450px){
+    .wrapper{
+       width: 100%;
+       padding: 0 20px;
+    }   
+}
+
+@media(max-width: 1000px){
+    .h-section{
+        font-size: 34px;
+    }
+
+    .h-section2{
+        font-size: 26px;
+    }
+
+    .h-section3{
+        font-size: 20px;
+    }
+    .t-level0{
+        font-size: 14px;    
+    }
+    .t-level1{
+        font-size: 16px;    
+    }
+    .t-level2{
+        font-size: 18px;    
+    }
+    .t-level3{
+        font-size: 22px;    
+    }   
+}
+
+
+@media(max-width: 600px){
+    .h-section{
+        font-size: 28px;
+    }
+    .h-section2{
+        font-size: 18px;
+    }
+
+    .h-section3{
+        font-size: 16px;
+    }
+    .t-level0{
+        font-size: 12px;    
+    }
+    .t-level1{
+        font-size: 14px;    
+    }
+    .t-level2{
+        font-size: 16px;    
+    }
+    .t-level3{
+        font-size: 18px;    
+    }   
+}
