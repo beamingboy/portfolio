@@ -12,17 +12,17 @@ $(window).scroll(function () {
   
   // Bg changer
   
-  var images = ["../images/home-section/earthWorksBg.jfif", "../images/home-section/earthWorksBg2.jfif", "../images/home-section/earthWorksBg3.jfif"]; // Add more image URLs as needed
-          var currentIndex = 0;
-          var banner = document.getElementById('main-banner');
+  // var images = ["../images/home-section/earthWorksBg.jfif", "../images/home-section/earthWorksBg2.jfif", "../images/home-section/earthWorksBg3.jfif"]; // Add more image URLs as needed
+  //         var currentIndex = 0;
+  //         var banner = document.getElementById('main-banner');
   
-          function changeBackground() {
-            banner.style.setProperty('background-image', 'url(' + images[currentIndex] + ')');
-              currentIndex = (currentIndex + 1) % images.length;
-          }
+  //         function changeBackground() {
+  //           banner.style.setProperty('background-image', 'url(' + images[currentIndex] + ')');
+  //             currentIndex = (currentIndex + 1) % images.length;
+  //         }
   
-          setInterval(changeBackground, 5000); // Change background every 5 seconds
-          changeBackground(); // Initial background change
+  //         setInterval(changeBackground, 5000); // Change background every 5 seconds
+  //         changeBackground(); // Initial background change
   
   // Nav-bar
   

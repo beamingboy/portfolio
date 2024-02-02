@@ -35,8 +35,18 @@ body{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
+
+.h-section3{
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
 
 .h-section3{
     color: #000;
@@ -70,8 +80,11 @@ body{
     font-weight: 400;
     line-height: normal;
 }
+
+
+
 .t-level3{
-    color: #ffffff;
+    color: #000000;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -99,6 +112,13 @@ body{
 
 .link-text{
     text-decoration: none;
+}
+
+.black-tt{
+    color: #000;
+}
+.white-tt{
+    color: #ffffff;
 }
 
 @media(max-width: 1450px){

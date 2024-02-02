@@ -5,8 +5,8 @@
     transition: 0.3s ease-in;
     background-color: #000000;
     background-image: url('../images/profile.png');
-    background-size: contain;
-    background-position: 700px bottom;
+    background-size: 40%;
+    background-position: 90% bottom;
     background-repeat: no-repeat;
 }
 
@@ -61,55 +61,57 @@ main h1{
     align-items: center;
 }
 
-.hero-image-container{
+.social-icons{
+    padding-top: 30px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    width: 100%;
-    background-image: url(../images/1.home/hero-bg.svg);
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
+    justify-content: space-between;
 }
+
 
 @media(max-width: 1300px){
 
-    .text-content{
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
     main h1{
-        font-size: 40px;
         font-weight: 800;
-        line-height: 80px;
+        line-height: 60px;
         width: 100%;    
     }
-    
+    .main-banner{
+        background-size: 60%;
+    }
 }
 
-/* @media(max-width: 1150px){
-    .text-content{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-} */
 
 @media(max-width: 1000px){
+    .main-banner{
+        height: 750px;
+        background-position: center bottom;
+        background-size: 300px;
+    }
     .hero-section{
         padding-top: 140px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-content{
+        align-items: center;
     }
     main h1{
         font-size: 30px;
         font-weight: 700;
         line-height: 60px;
+        text-align: center;
         width: 100%;    
     }
     .hero-text{
+        width: 100%;
         font-size: 16px;
+        text-align: center;
     }
-
     .hero-button{
+
         height: 60px;
         width: 180px;  
     }
@@ -130,16 +132,12 @@ main h1{
         font-size: 12px;
     }
     
-    .main-banner{
-        height: 90vh;
-        
-    }
 }
 
 
 /* Our Mission (done)*/ 
 .our-mission{
-    background-color: #0a0a0a;
+    background-color: #121212;
 }
 .m-text-conatiner{
     display: flex;
@@ -153,6 +151,113 @@ main h1{
     color:var(--logo-color);
 }
 
+.misson-text{
+    text-align: justify;
+}
+
+
+/* About Me */
+
+.about-pro-exp{
+    padding-top: 80px;
+    background-color: #121212;
+    transition: 0.3s ease-in;
+    padding-bottom: 100px;
+    border-bottom-left-radius: 400px 200px; /* radius measurements larger than the shape itself can be declared */
+    border-bottom-right-radius: 20%; /* you can mix and match with regular radius statements */
+}
+
+.about-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.span-red{
+    color:var(--logo-color);
+}
+
+.pro-exp-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in;
+}
+.pro-exp{
+    padding: 20px;
+    width: 1200px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.3s ease-in;
+}
+
+.a-pro-exp{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.a-pro-exp-content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    border-left: solid var(--logo-color);
+}
+
+.a-pro-exp-cards{
+    border: solid rgb(218, 218, 218);
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease-in;
+}
+
+.a-pro-exp-cards:hover{
+    scale: 1.02;
+}
+.a-pro-exp-cards ul {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+
+@media(max-width: 1300px){
+    .pro-exp{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .a-pro-exp{
+        padding-top: 50px;
+    }
+    .about-pro-exp{
+        padding-bottom: 200px;
+    }
+}
+
+@media(max-width: 600px){
+    .pro-exp{
+        padding-left: 0px;
+    }
+    
+    .a-pro-exp{
+        padding-left: 0px;
+    }
+    .about-pro-exp{
+        padding-bottom: 200px;
+    }
+}
 
 
 
