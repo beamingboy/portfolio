@@ -106,76 +106,7 @@ $(window).scroll(function () {
       from_subject: document.getElementById("subject").value,
       message: document.getElementById("message").value
     }
-    emailjs.send("service_helb38i","template_rpvwdtx", params).then(function (res) {
+    emailjs.send("service_rubji6w","template_dcwkl4r", params).then(function (res) {
       alert("success! " + res.status)
   })
   }
-  
-  
-  
-  
-  
-  // emailjs.send("service_helb38i","template_4mmzvnj", params).then(function (res) {
-  //     alert("success! " + res.status)
-  // })
-  
-  
-  
-  // Care slider
-  
-  // script.js
-  
-  const container = document.querySelector('.card-slider-container');
-  const cards = Array.from(document.querySelectorAll('.card'));
-  const dotsContainer = document.querySelector('.dots');
-  
-  let currentCardIndex = 0;
-  
-  function updateCards() {
-    container.style.transform = `translateX(-${currentCardIndex * 100}%)`;
-  }
-  
-  function updateDots() {
-    const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
-    dots.forEach((dot, index) => {
-      dot.classList.toggle('active', index === currentCardIndex);
-    });
-  }
-  
-  function navigateTo(index) {
-    currentCardIndex = index;
-    updateCards();
-    updateDots();
-  }
-  
-  function navigateLeft() {
-    if (currentCardIndex === 0) {
-      currentCardIndex = cards.length - 1;
-    } else {
-      currentCardIndex--;
-    }
-    updateCards();
-    updateDots();
-  }
-  
-  function navigateRight() {
-    if (currentCardIndex === cards.length - 1) {
-      currentCardIndex = 0;
-    } else {
-      currentCardIndex++;
-    }
-    updateCards();
-    updateDots();
-  }
-  
-  dotsContainer.innerHTML = cards.map((_, index) => `<div class="dot"></div>`).join('');
-  
-  const dots = Array.from(dotsContainer.querySelectorAll('.dot'));
-  dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
-      navigateTo(index);
-    });
-  });
-  
-  document.querySelector('.arrow-left').addEventListener('click', navigateLeft);
-  document.querySelector('.arrow-right').addEventListener('click', navigateRight);
